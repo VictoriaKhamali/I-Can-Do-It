@@ -38,11 +38,11 @@ border-radius: 5px;
 .weather-temperature img {
     margin-right: 5px;
     height: 64px;
-    width:64px;
+    width:640px;
 }
 
 .weather-temperature strong {
-  color:darkmagenta;
+  
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
