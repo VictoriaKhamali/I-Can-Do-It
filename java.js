@@ -4,7 +4,7 @@ function formateDate(timestamp) {
     if (hours < 10) {
       hours = `0${hours}`;
     }
-    let minutes = date.get.Minutes();
+    let minutes = date.getMinutes();
     if (minutes < 10){
         minutes = `0${minutes}`}
     let days =[ "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
