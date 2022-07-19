@@ -3,7 +3,7 @@ margin: 30px  auto;
 padding: 20px;
 border:1px solid #EAEAEA;
 border-radius: 5px;
-};
+}
+h1 {color:blueviolet}
 
-.weather-app.h1 {color:blueviolet};
 li {color: darkmagenta;}
