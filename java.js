@@ -11,7 +11,7 @@ function formateDate(timestamp) {
     let day = days[date.getDay()];
 
 
-    return `${day}${hours}:${minutes}`
+    return `${day}, ${hours}:${minutes}`
 }
 
 
@@ -35,6 +35,6 @@ dateElement.innerHTML = formateDate(response.data.dt *1000);
 
 let apiKey = "c0dcf5fcd110cf002c1b9db9b7fb417e";
 let apiUrl =
-  `https://api.openweathermap.org/data/2.5/weather?q=Kharkiv&appid=${apiKey}&units=metric`;
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
   axios.get(apiUrl).then(displayTemperature);
