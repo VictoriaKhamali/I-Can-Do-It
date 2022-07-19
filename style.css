@@ -5,6 +5,7 @@ border:1px solid #EAEAEA;
 border-radius: 5px;
 }
 
-h1{color: crimson;}
+h1{font-size: 300px;
+    color: crimson;}
 
 li {color: darkmagenta;}
