@@ -6,6 +6,8 @@ function displayTemperature (response){
 cityElement.innerHTML = response.data.name;
  let descriptionElement = document.querySelector("#description");
  descriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+humidityElement.innerHTML = response.data.main.humidity;
 }
 let apiKey = "c0dcf5fcd110cf002c1b9db9b7fb417e";
 let apiUrl =
