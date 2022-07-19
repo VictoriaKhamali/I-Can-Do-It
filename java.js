@@ -1,0 +1,1 @@
+let prompt =  alert (hi)
