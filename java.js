@@ -4,6 +4,8 @@ function displayTemperature (response){
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
      let cityElement = document.querySelector("#city");
 cityElement.innerHTML = response.data.name;
+ let descriptionElement = document.querySelector("#description");
+ descriptionElement.innerHTML = response.data.weather[0].description;
 }
 let apiKey = "c0dcf5fcd110cf002c1b9db9b7fb417e";
 let apiUrl =
