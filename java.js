@@ -9,7 +9,7 @@ cityElement.innerHTML = response.data.name;
   let humidityElement = document.querySelector("#humidity");
 humidityElement.innerHTML = response.data.main.humidity;
  let windElement = document.querySelector("#wind");
-windElement.innerHTML = response.data.main.wind;
+windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 let apiKey = "c0dcf5fcd110cf002c1b9db9b7fb417e";
 let apiUrl =
