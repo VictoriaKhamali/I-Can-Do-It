@@ -29,6 +29,9 @@ humidityElement.innerHTML = response.data.main.humidity;
 windElement.innerHTML = Math.round(response.data.wind.speed);
  let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formateDate(response.data.dt *1000);
+let iconElement = document.querySelector("#icon");
+iconElement.innerHTML.setAtribute("src",`http://openweathermap.org/img/wn/10d@2x.png` ) ;
+    
     
     }
 
