@@ -51,8 +51,8 @@ function handleSubmit(event){
 function displayFarenheitTemperature(event){
     event.preventDefault();
      let temperatureElement = document.querySelector("#temperature");
-let FarenheitTemperature = (temperatureElement.innerHTML*9) /5 + 32;
-     temperatureElement.innerHTML = Math.round(FarenheitTemperature);
+let FahrenheitTemperature = (temperatureElement.innerHTML*9) /5 + 32;
+     temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
   }
 
 
