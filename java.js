@@ -18,18 +18,23 @@ function formateDate(timestamp) {
 function displayTemperature (response){
   
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
-     let cityElement = document.querySelector("#city");
-cityElement.innerHTML = response.data.name;
- let descriptionElement = document.querySelector("#description");
- descriptionElement.innerHTML = response.data.weather[0].description;
-  let humidityElement = document.querySelector("#humidity");
-humidityElement.innerHTML = response.data.main.humidity;
- let windElement = document.querySelector("#wind");
-windElement.innerHTML = Math.round(response.data.wind.speed);
- let dateElement = document.querySelector("#date");
-dateElement.innerHTML = formateDate(response.data.dt *1000);
+    let cityElement = document.querySelector("#city");
+    let descriptionElement = document.querySelector("#description"); 
+     let humidityElement = document.querySelector("#humidity");
+let windElement = document.querySelector("#wind");
+let dateElement = document.querySelector("#date");
 let iconElement = document.querySelector("#icon");
+
+
+ celsiusTemperetare=response.data.maim.temp;
+    
+    
+temperatureElement.innerHTML = Math.round(celsiusTemperetare);
+cityElement.innerHTML = response.data.name;
+ descriptionElement.innerHTML = response.data.weather[0].description;
+ humidityElement.innerHTML = response.data.main.humidity;
+ windElement.innerHTML = Math.round(response.data.wind.speed);
+ dateElement.innerHTML = formateDate(response.data.dt *1000);
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
  iconElement.setAttribute("alt",response.data.weather[0].description) ;  
     
@@ -51,7 +56,7 @@ function handleSubmit(event){
 function displayFarenheitTemperature(event){
     event.preventDefault();
      let temperatureElement = document.querySelector("#temperature");
-let FahrenheitTemperature = (temperatureElement.innerHTML*9) /5 + 32;
+let FahrenheitTemperature = ( celsiusTemperetare*9) /5 + 32;
      temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
   }
 
@@ -61,9 +66,15 @@ let FahrenheitTemperature = (temperatureElement.innerHTML*9) /5 + 32;
   form.addEventListener("submit", handleSubmit);
 
 
-  
+  let celsiusTemperetare = null;
 
-  search("Kyiv");
+ 
 
   let farenheitlink=document.querySelector("#farenheit-link");
   farenheitlink.addEventListener("ckick",displayFarenheitTemperature);
+
+
+
+
+ search("Kyiv");
+
