@@ -56,21 +56,21 @@ function handleSubmit(event){
 function displayFarenheitTemperature(event){
     event.preventDefault();
      let temperatureElement = document.querySelector("#temperature");
-let FahrenheitTemperature = ( celsiusTemperetare*9) /5 + 32;
+let FahrenheitTemperature = ( celsiusTemperetare * 9) / 5 + 32;
      temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
   }
 
 
 
-  let form = document.querySelector("#search-form");
-  form.addEventListener("submit", handleSubmit);
-
+  
 
   let celsiusTemperetare = null;
 
- 
+ let form = document.querySelector("#search-form");
+  form.addEventListener("submit", handleSubmit);
 
-  let farenheitlink=document.querySelector("#farenheit-link");
+
+  let farenheitlink = document.querySelector("#farenheit-link");
   farenheitlink.addEventListener("ckick",displayFarenheitTemperature);
 
 
