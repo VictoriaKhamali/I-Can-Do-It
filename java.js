@@ -26,7 +26,7 @@ let dateElement = document.querySelector("#date");
 let iconElement = document.querySelector("#icon");
 
 
- celsiusTemperetare=response.data.maim.temp;
+ 
     
     
 temperatureElement.innerHTML = Math.round(celsiusTemperetare);
