@@ -24,7 +24,7 @@ forecastHTML =
   ` 
                <div class = "col-2">
                    <div class = "weather-forecast-date">
-                   Thu
+                   ${day}
                 </div>
                    <img src ="http://openweathermap.org/img/wn/10d@2x.png"
                    alt=""
@@ -37,7 +37,7 @@ forecastHTML =
                    </div>
                </div>
            `;
-           
+
   })
   
            forecastHTML = forecastHTML + `</div>`
