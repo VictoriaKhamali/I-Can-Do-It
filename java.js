@@ -29,7 +29,7 @@ let iconElement = document.querySelector("#icon");
  
     
     
-temperatureElement.innerHTML = Math.round(celsiusTemperetare);
+temperatureElement.innerHTML = Math.round(celsiusTemperature);
 cityElement.innerHTML = response.data.name;
  descriptionElement.innerHTML = response.data.weather[0].description;
  humidityElement.innerHTML = response.data.main.humidity;
