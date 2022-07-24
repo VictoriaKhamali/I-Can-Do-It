@@ -62,7 +62,7 @@ let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
      temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
 
-function displayCelsiustTemperature(event){
+function displayCelsiusTemperature(event){
   event.preventDefault()
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
@@ -81,7 +81,7 @@ function displayCelsiustTemperature(event){
 
 
   let celsiusLink = document.querySelector("celsius-link");
-celsiusLink.addEventListener("click", displayFahrenheitTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
 
