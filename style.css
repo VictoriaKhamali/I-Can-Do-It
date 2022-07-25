@@ -1,8 +1,5 @@
  body {
-   background-image: url("backgr.jpg");
-   background-repeat:no-repeat ;
-   background-size: 1300px;
-  
+  background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
  }
 
 h1 {color: white;
