@@ -25,7 +25,7 @@ function displayForecast (response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = ` <div class = "row">`;
-  let days = ["Mon","Tue","Wen","Thu","Fri","Sat","Sun"];
+  
   forecast.forEach(function(forecastDay) {
 forecastHTML =
   forecastHTML +
