@@ -1,5 +1,6 @@
  body {
-  background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+  background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-size: 1200px;
  }
 
 h1 {color: white;
