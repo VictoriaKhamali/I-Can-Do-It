@@ -1,5 +1,6 @@
  body {
    background-image: url("backgr.jpg");
+   background-repeat:no-repeat ;
    background-size: 1000px;
    
  }
