@@ -1,6 +1,7 @@
  body {
   background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
   background-size: 1200px;
+  background-attachment: fixed;
  }
 
 h1 {color: white;
