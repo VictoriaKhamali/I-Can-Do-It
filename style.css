@@ -60,6 +60,7 @@ border-radius: 5px;
     font-weight: 400;
     top:-34px;
     color: white;
+
     
 }
 
@@ -71,7 +72,8 @@ border-radius: 5px;
 .weather-temperature .active:hover {
   text-decoration: none;
 }
-a {text-decoration: none;}
+a {color: white;
+  text-decoration: none;}
 
 .weather-forecast {
 margin-top: 20px;
