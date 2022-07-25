@@ -1,5 +1,7 @@
  body {
    background-image: url("backgr.jpg");
+   background-size: 400px;
+   
  }
 
 h1 {color: #b3adad;
